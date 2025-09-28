@@ -1,7 +1,7 @@
 #LetterFrequency.py
-#Name:
-#Date:
-#Assignment:
+#Name: Alexa Falkner
+#Date: 9/28/2025
+#Assignment: Letter Frequency
 
 #This program will create a CSV file of frequencies based on a text file.
 #Use Excel or similar spreadsheet software to visualize the frequencies of the CSV file.
@@ -15,6 +15,10 @@ def countLetters(message):
     freq = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
 
     #loop through each letter
+    for char in message:
+        if char in alpha:
+            index = alpha.index(char)
+            freq[index] += 1
     #Find the position in the alphabet
     #Increase the frequency at that position. If position was 5, then frequencies[5] = frequencies[5] + 1
 
